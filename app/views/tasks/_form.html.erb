@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="wrapper-form">
+    <%= form_for(@task) do |f| %>
+      <div class="form-group">
+        <%= f.label :title %>
+        <%= f.text_field :title, class: 'form-control' %>
+      </div>
+      <div class="form-group">
+        <%= f.label :details %>
+        <%= f.text_field :details, class: 'form-control' %>
+      </div>
+      <div class="form-group">
+        <%= f.label :completed %>
+        <%= f.check_box :completed, class: 'form-control' %>
+      </div>
+      <%= f.submit class: 'btn btn-primary' %>
+      <%= link_to 'All list', tasks_path, class: 'btn btn-success' %>
+    <% end %></div>
+</div>

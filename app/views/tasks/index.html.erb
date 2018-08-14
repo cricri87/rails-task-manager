@@ -1,0 +1,17 @@
+
+<div class="container">
+  <div class="wrapper-form tasks">
+     <h1>All tasks</h1>
+     <%= link_to 'New Task', new_task_path, class: 'btn btn-primary' %>
+
+     <% @tasks.each do |task| %>
+     <% if task.completed == true %>
+       <p><%= link_to task.title, task_path(task.id)%> <i class="far fa-check-square"></i></p>
+       <% else %>
+       <p><%= link_to task.title, task_path(task.id)%> <i class="far fa-square"></i></p>
+     <% end %>
+     <% end %>
+   </div>
+</div>
+
+

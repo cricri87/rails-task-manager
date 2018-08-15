@@ -5,8 +5,16 @@
 body {
   background-color: lightgray;
 }
-.btn {
+.btn, .fas{
   margin: 10px;
+}
+
+.fas {
+  font-size: 1.3em;
+}
+
+.header {
+  margin-top: 100px;
 }
 
 .wrapper-form, .display {

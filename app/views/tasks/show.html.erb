@@ -1,13 +1,11 @@
 <div class="container">
  <div class="wrapper-form display">
-  <h1><%= @task.title %></h1>
+  <h1 ><%= @task.title %></h1>
     <p><%= @task.details %></p>
-   <p><%= @task.created_at %></p>
-   <p>
-     <%= link_to 'All list', tasks_path, class: 'btn btn-primary' %>
-     <%= link_to 'Edit', edit_task_path, class: 'btn btn-success' %>
-     <%= link_to 'Destroy', destroy_path, method: :delete,
-      data: { confirm: "Are you sure?" }, class: 'btn btn-danger' %>
+     <%= link_to '', tasks_path, class: 'fas fa-list-ul' %>
+     <%= link_to '', edit_task_path, class: 'fas fa-edit' %>
+     <%= link_to '',destroy_path, method: :delete,
+      data: { confirm: "Are you sure?" }, class: 'fas fa-trash-alt' %>
    </div>
    </p>
  </div>
